@@ -4,7 +4,7 @@ Using UITextView to achieve hyperlinks, with a custom expression, but also to lo
 用的是系统UITextView控件的linkTextAttributes和attributedText属性实现了此功能，相关API须在>=7.0的系统上运行。由于实现了在文本里加载网络图片，所以导入了SDWebImage第三方文件，若不需要可以删除LXTextView.h文件里的相关代码（#import "UIImageView+WebCache.h"以及- (void)downloadImageWithUrl:(NSString *)urlString withIndex:(NSInteger)index
 ）。 
 
-效果如下图：<br>
+#####效果图如下：<br>
 ![image](https://github.com/SoftProgramLX/LXTextViewLink/blob/master/TextViewLink/screen.png)
 
 ===========================
@@ -23,4 +23,4 @@ Using UITextView to achieve hyperlinks, with a custom expression, but also to lo
     textView.textString = @"Thiswww.hiphotos.baidu.comis ancel超链接ofa bri_StringWith Attachment:textAttachment]indfdxcsehttps://www.baidu.comrtAttribu tedStriUse [傲慢]this method to release shared invali dateexwwwwssdvdv.hiphotos.baidu.dsccomamptimers, and [吓]isa覆盖核 http://c.hip[大哭]hotos.baidu.com设施nexstore enough application state information[微笑] to re https://c.hiphotos.baidu.cnstore your";
     [self.view addSubview:textView];
 ```
-    <br>QQ：2239344645
+    QQ：2239344645
