@@ -18,7 +18,7 @@
 
 @property (nonatomic, weak) LXTextView *textView;
 
-@end
+@end 
 
 @implementation ViewController
 
