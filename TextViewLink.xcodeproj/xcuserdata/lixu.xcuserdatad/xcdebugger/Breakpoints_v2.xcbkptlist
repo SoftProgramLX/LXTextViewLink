@@ -57,7 +57,7 @@
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "49"
             endingLineNumber = "49"
-            landmarkName = "+validateEmojiOfSendMessage:"
+            landmarkName = "+validateEmojiOfText:"
             landmarkType = "5">
          </BreakpointContent>
       </BreakpointProxy>

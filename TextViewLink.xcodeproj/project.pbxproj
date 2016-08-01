@@ -15,7 +15,6 @@
 		5C3C9A7F1CC62760004290FE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5C3C9A7D1CC62760004290FE /* LaunchScreen.storyboard */; };
 		5C3C9A8A1CC62760004290FE /* TextViewLinkTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 5C3C9A891CC62760004290FE /* TextViewLinkTests.m */; };
 		5C3C9A951CC62760004290FE /* TextViewLinkUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 5C3C9A941CC62760004290FE /* TextViewLinkUITests.m */; };
-		5C3C9AA41CC633DA004290FE /* LXTextAttachment.m in Sources */ = {isa = PBXBuildFile; fileRef = 5C3C9AA31CC633DA004290FE /* LXTextAttachment.m */; };
 		5C3C9AC71CC63879004290FE /* MKAnnotationView+WebCache.m in Sources */ = {isa = PBXBuildFile; fileRef = 5C3C9AA71CC63879004290FE /* MKAnnotationView+WebCache.m */; };
 		5C3C9AC81CC63879004290FE /* NSData+ImageContentType.m in Sources */ = {isa = PBXBuildFile; fileRef = 5C3C9AA91CC63879004290FE /* NSData+ImageContentType.m */; };
 		5C3C9AC91CC63879004290FE /* SDImageCache.m in Sources */ = {isa = PBXBuildFile; fileRef = 5C3C9AAB1CC63879004290FE /* SDImageCache.m */; };
@@ -32,9 +31,11 @@
 		5C3C9AD41CC63879004290FE /* UIImageView+HighlightedWebCache.m in Sources */ = {isa = PBXBuildFile; fileRef = 5C3C9AC21CC63879004290FE /* UIImageView+HighlightedWebCache.m */; };
 		5C3C9AD51CC63879004290FE /* UIImageView+WebCache.m in Sources */ = {isa = PBXBuildFile; fileRef = 5C3C9AC41CC63879004290FE /* UIImageView+WebCache.m */; };
 		5C3C9AD61CC63879004290FE /* UIView+WebCacheOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 5C3C9AC61CC63879004290FE /* UIView+WebCacheOperation.m */; };
-		5C3C9AD91CC64881004290FE /* LXTextView.m in Sources */ = {isa = PBXBuildFile; fileRef = 5C3C9AD81CC64881004290FE /* LXTextView.m */; };
 		5C3C9ADF1CC65603004290FE /* expression.plist in Resources */ = {isa = PBXBuildFile; fileRef = 5C3C9ADE1CC65603004290FE /* expression.plist */; };
-		5C3C9AE21CC65682004290FE /* LXHelpClass.m in Sources */ = {isa = PBXBuildFile; fileRef = 5C3C9AE11CC65682004290FE /* LXHelpClass.m */; };
+		5CE67EBA1D4F567800B5DCFC /* LXHelpClass.m in Sources */ = {isa = PBXBuildFile; fileRef = 5CE67EB41D4F567800B5DCFC /* LXHelpClass.m */; };
+		5CE67EBB1D4F567800B5DCFC /* LXTextAttachment.m in Sources */ = {isa = PBXBuildFile; fileRef = 5CE67EB61D4F567800B5DCFC /* LXTextAttachment.m */; };
+		5CE67EBC1D4F567800B5DCFC /* LXTextView.m in Sources */ = {isa = PBXBuildFile; fileRef = 5CE67EB81D4F567800B5DCFC /* LXTextView.m */; };
+		5CE67EBE1D4F56AC00B5DCFC /* screen.png in Resources */ = {isa = PBXBuildFile; fileRef = 5CE67EBD1D4F56AC00B5DCFC /* screen.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -71,8 +72,6 @@
 		5C3C9A901CC62760004290FE /* TextViewLinkUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TextViewLinkUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		5C3C9A941CC62760004290FE /* TextViewLinkUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TextViewLinkUITests.m; sourceTree = "<group>"; };
 		5C3C9A961CC62760004290FE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		5C3C9AA21CC633DA004290FE /* LXTextAttachment.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LXTextAttachment.h; sourceTree = "<group>"; };
-		5C3C9AA31CC633DA004290FE /* LXTextAttachment.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LXTextAttachment.m; sourceTree = "<group>"; };
 		5C3C9AA61CC63879004290FE /* MKAnnotationView+WebCache.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "MKAnnotationView+WebCache.h"; sourceTree = "<group>"; };
 		5C3C9AA71CC63879004290FE /* MKAnnotationView+WebCache.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "MKAnnotationView+WebCache.m"; sourceTree = "<group>"; };
 		5C3C9AA81CC63879004290FE /* NSData+ImageContentType.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSData+ImageContentType.h"; sourceTree = "<group>"; };
@@ -106,12 +105,15 @@
 		5C3C9AC41CC63879004290FE /* UIImageView+WebCache.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImageView+WebCache.m"; sourceTree = "<group>"; };
 		5C3C9AC51CC63879004290FE /* UIView+WebCacheOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+WebCacheOperation.h"; sourceTree = "<group>"; };
 		5C3C9AC61CC63879004290FE /* UIView+WebCacheOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+WebCacheOperation.m"; sourceTree = "<group>"; };
-		5C3C9AD71CC64881004290FE /* LXTextView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LXTextView.h; sourceTree = "<group>"; };
-		5C3C9AD81CC64881004290FE /* LXTextView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LXTextView.m; sourceTree = "<group>"; };
 		5C3C9ADE1CC65603004290FE /* expression.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = expression.plist; sourceTree = "<group>"; };
-		5C3C9AE01CC65682004290FE /* LXHelpClass.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LXHelpClass.h; sourceTree = "<group>"; };
-		5C3C9AE11CC65682004290FE /* LXHelpClass.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LXHelpClass.m; sourceTree = "<group>"; };
-		5C3C9AE31CC656A9004290FE /* SynthesizeSingleton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SynthesizeSingleton.h; sourceTree = "<group>"; };
+		5CE67EB31D4F567800B5DCFC /* LXHelpClass.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LXHelpClass.h; sourceTree = "<group>"; };
+		5CE67EB41D4F567800B5DCFC /* LXHelpClass.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LXHelpClass.m; sourceTree = "<group>"; };
+		5CE67EB51D4F567800B5DCFC /* LXTextAttachment.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LXTextAttachment.h; sourceTree = "<group>"; };
+		5CE67EB61D4F567800B5DCFC /* LXTextAttachment.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LXTextAttachment.m; sourceTree = "<group>"; };
+		5CE67EB71D4F567800B5DCFC /* LXTextView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LXTextView.h; sourceTree = "<group>"; };
+		5CE67EB81D4F567800B5DCFC /* LXTextView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LXTextView.m; sourceTree = "<group>"; };
+		5CE67EB91D4F567800B5DCFC /* SynthesizeSingleton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SynthesizeSingleton.h; sourceTree = "<group>"; };
+		5CE67EBD1D4F56AC00B5DCFC /* screen.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = screen.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -162,23 +164,12 @@
 		5C3C9A6E1CC62760004290FE /* TextViewLink */ = {
 			isa = PBXGroup;
 			children = (
+				5CE67EB21D4F567800B5DCFC /* LXTextViewLink */,
 				5C3C9AA51CC63879004290FE /* SDWebImage */,
 				5C3C9A721CC62760004290FE /* AppDelegate.h */,
 				5C3C9A731CC62760004290FE /* AppDelegate.m */,
 				5C3C9A751CC62760004290FE /* ViewController.h */,
 				5C3C9A761CC62760004290FE /* ViewController.m */,
-				5C3C9AD71CC64881004290FE /* LXTextView.h */,
-				5C3C9AD81CC64881004290FE /* LXTextView.m */,
-				5C3C9AA21CC633DA004290FE /* LXTextAttachment.h */,
-				5C3C9AA31CC633DA004290FE /* LXTextAttachment.m */,
-				5C3C9AE01CC65682004290FE /* LXHelpClass.h */,
-				5C3C9AE11CC65682004290FE /* LXHelpClass.m */,
-				5C3C9AE31CC656A9004290FE /* SynthesizeSingleton.h */,
-				5C3C9A781CC62760004290FE /* Main.storyboard */,
-				5C3C9A7B1CC62760004290FE /* Assets.xcassets */,
-				5C3C9A7D1CC62760004290FE /* LaunchScreen.storyboard */,
-				5C3C9A801CC62760004290FE /* Info.plist */,
-				5C3C9ADE1CC65603004290FE /* expression.plist */,
 				5C3C9A6F1CC62760004290FE /* Supporting Files */,
 			);
 			path = TextViewLink;
@@ -187,6 +178,12 @@
 		5C3C9A6F1CC62760004290FE /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				5C3C9A781CC62760004290FE /* Main.storyboard */,
+				5C3C9A7B1CC62760004290FE /* Assets.xcassets */,
+				5C3C9A7D1CC62760004290FE /* LaunchScreen.storyboard */,
+				5C3C9A801CC62760004290FE /* Info.plist */,
+				5C3C9ADE1CC65603004290FE /* expression.plist */,
+				5CE67EBD1D4F56AC00B5DCFC /* screen.png */,
 				5C3C9A701CC62760004290FE /* main.m */,
 			);
 			name = "Supporting Files";
@@ -248,6 +245,20 @@
 				5C3C9AC61CC63879004290FE /* UIView+WebCacheOperation.m */,
 			);
 			path = SDWebImage;
+			sourceTree = "<group>";
+		};
+		5CE67EB21D4F567800B5DCFC /* LXTextViewLink */ = {
+			isa = PBXGroup;
+			children = (
+				5CE67EB31D4F567800B5DCFC /* LXHelpClass.h */,
+				5CE67EB41D4F567800B5DCFC /* LXHelpClass.m */,
+				5CE67EB51D4F567800B5DCFC /* LXTextAttachment.h */,
+				5CE67EB61D4F567800B5DCFC /* LXTextAttachment.m */,
+				5CE67EB71D4F567800B5DCFC /* LXTextView.h */,
+				5CE67EB81D4F567800B5DCFC /* LXTextView.m */,
+				5CE67EB91D4F567800B5DCFC /* SynthesizeSingleton.h */,
+			);
+			path = LXTextViewLink;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -354,6 +365,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				5C3C9A7F1CC62760004290FE /* LaunchScreen.storyboard in Resources */,
+				5CE67EBE1D4F56AC00B5DCFC /* screen.png in Resources */,
 				5C3C9A7C1CC62760004290FE /* Assets.xcassets in Resources */,
 				5C3C9ADF1CC65603004290FE /* expression.plist in Resources */,
 				5C3C9A7A1CC62760004290FE /* Main.storyboard in Resources */,
@@ -385,9 +397,10 @@
 				5C3C9AD21CC63879004290FE /* UIImage+MultiFormat.m in Sources */,
 				5C3C9ACD1CC63879004290FE /* SDWebImageDownloaderOperation.m in Sources */,
 				5C3C9A771CC62760004290FE /* ViewController.m in Sources */,
-				5C3C9AD91CC64881004290FE /* LXTextView.m in Sources */,
 				5C3C9ACA1CC63879004290FE /* SDWebImageCompat.m in Sources */,
 				5C3C9AD11CC63879004290FE /* UIImage+GIF.m in Sources */,
+				5CE67EBB1D4F567800B5DCFC /* LXTextAttachment.m in Sources */,
+				5CE67EBC1D4F567800B5DCFC /* LXTextView.m in Sources */,
 				5C3C9ACF1CC63879004290FE /* SDWebImagePrefetcher.m in Sources */,
 				5C3C9A741CC62760004290FE /* AppDelegate.m in Sources */,
 				5C3C9A711CC62760004290FE /* main.m in Sources */,
@@ -398,11 +411,10 @@
 				5C3C9AD01CC63879004290FE /* UIButton+WebCache.m in Sources */,
 				5C3C9AC71CC63879004290FE /* MKAnnotationView+WebCache.m in Sources */,
 				5C3C9AC81CC63879004290FE /* NSData+ImageContentType.m in Sources */,
-				5C3C9AA41CC633DA004290FE /* LXTextAttachment.m in Sources */,
 				5C3C9ACE1CC63879004290FE /* SDWebImageManager.m in Sources */,
 				5C3C9ACB1CC63879004290FE /* SDWebImageDecoder.m in Sources */,
 				5C3C9AC91CC63879004290FE /* SDImageCache.m in Sources */,
-				5C3C9AE21CC65682004290FE /* LXHelpClass.m in Sources */,
+				5CE67EBA1D4F567800B5DCFC /* LXHelpClass.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -628,6 +640,7 @@
 				5C3C9A9B1CC62760004290FE /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		5C3C9A9C1CC62760004290FE /* Build configuration list for PBXNativeTarget "TextViewLinkTests" */ = {
 			isa = XCConfigurationList;
@@ -636,6 +649,7 @@
 				5C3C9A9E1CC62760004290FE /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		5C3C9A9F1CC62760004290FE /* Build configuration list for PBXNativeTarget "TextViewLinkUITests" */ = {
 			isa = XCConfigurationList;
@@ -644,6 +658,7 @@
 				5C3C9AA11CC62760004290FE /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
