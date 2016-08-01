@@ -13,6 +13,7 @@ Using UITextView to achieve hyperlinks, with a custom expression, but also to lo
 * 效果图上匹配了一些错误的网址，那没关系，正则表达式不够严谨，这也可以满足一般需求了。
 * 链接需要深按才有效，系统的原因。
 
+<br>
 使用方法非常简单，集成代码如下：<br>
 ```objective-c
     LXTextView *textView = [[LXTextView alloc] initWithFrame:CGRectMake(10, 10, kScreenWidth - 20, kScreenHeight - 20)];
@@ -21,5 +22,5 @@ Using UITextView to achieve hyperlinks, with a custom expression, but also to lo
     textView.fontFloat = 18.;
     textView.textString = @"Thiswww.hiphotos.baidu.comis ancel超链接ofa bri_StringWith Attachment:textAttachment]indfdxcsehttps://www.baidu.comrtAttribu tedStriUse [傲慢]this method to release shared invali dateexwwwwssdvdv.hiphotos.baidu.dsccomamptimers, and [吓]isa覆盖核 http://c.hip[大哭]hotos.baidu.com设施nexstore enough application state information[微笑] to re https://c.hiphotos.baidu.cnstore your";
     [self.view addSubview:textView];
-    ```
+```
     <br>QQ：2239344645
