@@ -6,18 +6,18 @@
 //  Copyright © 2016年 李旭. All rights reserved.
 //
 
-#import "LXHelpClass.h"
+#import "LXTextHelpClass.h"
 #import "SynthesizeSingleton.h"
 
-@interface LXHelpClass ()
+@interface LXTextHelpClass ()
 
 @property (nonatomic, copy) NSString *validateStr; //表情文字的正则表达式
 
 @end
 
-@implementation LXHelpClass
+@implementation LXTextHelpClass
 
-SYNTHESIZE_SINGLETON_FOR_CLASS(LXHelpClass)
+SYNTHESIZE_SINGLETON_FOR_CLASS(LXTextHelpClass)
 
 - (instancetype)init
 {
@@ -38,7 +38,7 @@ SYNTHESIZE_SINGLETON_FOR_CLASS(LXHelpClass)
 
 + (NSArray *)validateEmojiOfText:(NSString *)string
 {
-    LXHelpClass *helpClass = [LXHelpClass sharedLXHelpClass];
+    LXTextHelpClass *helpClass = [LXTextHelpClass sharedLXTextHelpClass];
     NSMutableArray *imgKeyArr = [NSMutableArray array];
     NSArray *arr = [string componentsSeparatedByString:@"["];
     for (int i = 1; i < arr.count; i++) {

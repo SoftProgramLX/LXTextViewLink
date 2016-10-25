@@ -9,19 +9,19 @@
 #import "LXTextView.h"
 #import "LXTextAttachment.h"
 #import "UIImageView+WebCache.h"
-#import "LXHelpClass.h"
+#import "LXTextHelpClass.h"
 
 @implementation LXTextView
 {
     NSMutableAttributedString *attributedString;
-    LXHelpClass *helpClass;
+    LXTextHelpClass *helpClass;
 }
 
 - (instancetype)initWithFrame:(CGRect)frame
 {
     self = [super initWithFrame:frame];
     if (self) {
-        helpClass = [LXHelpClass sharedLXHelpClass];
+        helpClass = [LXTextHelpClass sharedLXTextHelpClass];
         self.fontFloat = 18.;
     }
     return self;
@@ -30,9 +30,9 @@
 - (void)setTextString:(NSString *)string
 {
     NSDictionary *attributeDict =
-        [NSDictionary dictionaryWithObjectsAndKeys:
-         [UIFont systemFontOfSize:self.fontFloat], NSFontAttributeName,
-         [UIColor blackColor], NSForegroundColorAttributeName,nil];
+    [NSDictionary dictionaryWithObjectsAndKeys:
+     [UIFont systemFontOfSize:self.fontFloat], NSFontAttributeName,
+     [UIColor blackColor], NSForegroundColorAttributeName,nil];
     
     attributedString = [[NSMutableAttributedString alloc] initWithString:string attributes:attributeDict];
     
@@ -42,7 +42,7 @@
     paragraphStyle.lineBreakMode = NSLineBreakByCharWrapping;
     [attributedString addAttribute:NSParagraphStyleAttributeName value:paragraphStyle range:NSMakeRange(0, string.length)];
     
-    NSArray *emojiArr = [LXHelpClass validateEmojiOfText:attributedString.string];
+    NSArray *emojiArr = [LXTextHelpClass validateEmojiOfText:attributedString.string];
     for (int i = 0; i < emojiArr.count; i++) {
         NSInteger index = [helpClass.keyArr indexOfObject:emojiArr[i]];
         NSString *imgName = [helpClass.valueArr objectAtIndex:index];
@@ -63,7 +63,7 @@
     NSAttributedString *textAttachmentString2 = [NSAttributedString attributedStringWithAttachment:textAttachmentImg];
     [attributedString insertAttributedString:textAttachmentString2 atIndex:56];
     
-    NSArray *linkArr = [LXHelpClass validateLinkOfText:attributedString.string];
+    NSArray *linkArr = [LXTextHelpClass validateLinkOfText:attributedString.string];
     for (int i = 0; i < linkArr.count; i++) {
         NSRange range = NSRangeFromString(linkArr[i]);
         //正则表达式匹配的链接
@@ -72,7 +72,11 @@
     }
     
     //自定义的链接
-    [attributedString addAttribute:NSLinkAttributeName value:@"http://baidu.com" range:[[attributedString string] rangeOfString:@"超链接"]];
+    NSString *key1 = @"超链接";
+    if ([string rangeOfString:key1].length > 0) {
+        [attributedString addAttribute:NSLinkAttributeName value:@"http://baidu.com" range:[[attributedString string] rangeOfString:key1]];
+        [attributedString addAttribute:NSFontAttributeName value:[UIFont fontWithName:@"HelveticaNeue" size:self.fontFloat+2.0] range:[string rangeOfString:key1]];
+    }
     
     NSDictionary *linkAttributes =
     @{NSForegroundColorAttributeName:[UIColor greenColor], NSUnderlineColorAttributeName:[UIColor lightGrayColor], NSUnderlineStyleAttributeName:@(NSUnderlinePatternSolid)};

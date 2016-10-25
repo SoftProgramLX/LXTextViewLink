@@ -8,7 +8,7 @@
 
 #import "ViewController.h"
 #import "LXTextView.h"
-#import "LXHelpClass.h"
+#import "LXTextHelpClass.h"
 
 // 屏幕宽与高
 #define kScreenWidth  ([UIScreen mainScreen].bounds.size.width)

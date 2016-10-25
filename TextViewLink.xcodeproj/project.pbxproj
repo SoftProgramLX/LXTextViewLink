@@ -32,7 +32,7 @@
 		5C3C9AD51CC63879004290FE /* UIImageView+WebCache.m in Sources */ = {isa = PBXBuildFile; fileRef = 5C3C9AC41CC63879004290FE /* UIImageView+WebCache.m */; };
 		5C3C9AD61CC63879004290FE /* UIView+WebCacheOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 5C3C9AC61CC63879004290FE /* UIView+WebCacheOperation.m */; };
 		5C3C9ADF1CC65603004290FE /* expression.plist in Resources */ = {isa = PBXBuildFile; fileRef = 5C3C9ADE1CC65603004290FE /* expression.plist */; };
-		5CE67EBA1D4F567800B5DCFC /* LXHelpClass.m in Sources */ = {isa = PBXBuildFile; fileRef = 5CE67EB41D4F567800B5DCFC /* LXHelpClass.m */; };
+		5CE67EBA1D4F567800B5DCFC /* LXTextHelpClass.m in Sources */ = {isa = PBXBuildFile; fileRef = 5CE67EB41D4F567800B5DCFC /* LXTextHelpClass.m */; };
 		5CE67EBB1D4F567800B5DCFC /* LXTextAttachment.m in Sources */ = {isa = PBXBuildFile; fileRef = 5CE67EB61D4F567800B5DCFC /* LXTextAttachment.m */; };
 		5CE67EBC1D4F567800B5DCFC /* LXTextView.m in Sources */ = {isa = PBXBuildFile; fileRef = 5CE67EB81D4F567800B5DCFC /* LXTextView.m */; };
 		5CE67EBE1D4F56AC00B5DCFC /* screen.png in Resources */ = {isa = PBXBuildFile; fileRef = 5CE67EBD1D4F56AC00B5DCFC /* screen.png */; };
@@ -106,8 +106,8 @@
 		5C3C9AC51CC63879004290FE /* UIView+WebCacheOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+WebCacheOperation.h"; sourceTree = "<group>"; };
 		5C3C9AC61CC63879004290FE /* UIView+WebCacheOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+WebCacheOperation.m"; sourceTree = "<group>"; };
 		5C3C9ADE1CC65603004290FE /* expression.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = expression.plist; sourceTree = "<group>"; };
-		5CE67EB31D4F567800B5DCFC /* LXHelpClass.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LXHelpClass.h; sourceTree = "<group>"; };
-		5CE67EB41D4F567800B5DCFC /* LXHelpClass.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LXHelpClass.m; sourceTree = "<group>"; };
+		5CE67EB31D4F567800B5DCFC /* LXTextHelpClass.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LXTextHelpClass.h; sourceTree = "<group>"; };
+		5CE67EB41D4F567800B5DCFC /* LXTextHelpClass.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LXTextHelpClass.m; sourceTree = "<group>"; };
 		5CE67EB51D4F567800B5DCFC /* LXTextAttachment.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LXTextAttachment.h; sourceTree = "<group>"; };
 		5CE67EB61D4F567800B5DCFC /* LXTextAttachment.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LXTextAttachment.m; sourceTree = "<group>"; };
 		5CE67EB71D4F567800B5DCFC /* LXTextView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LXTextView.h; sourceTree = "<group>"; };
@@ -250,8 +250,8 @@
 		5CE67EB21D4F567800B5DCFC /* LXTextViewLink */ = {
 			isa = PBXGroup;
 			children = (
-				5CE67EB31D4F567800B5DCFC /* LXHelpClass.h */,
-				5CE67EB41D4F567800B5DCFC /* LXHelpClass.m */,
+				5CE67EB31D4F567800B5DCFC /* LXTextHelpClass.h */,
+				5CE67EB41D4F567800B5DCFC /* LXTextHelpClass.m */,
 				5CE67EB51D4F567800B5DCFC /* LXTextAttachment.h */,
 				5CE67EB61D4F567800B5DCFC /* LXTextAttachment.m */,
 				5CE67EB71D4F567800B5DCFC /* LXTextView.h */,
@@ -414,7 +414,7 @@
 				5C3C9ACE1CC63879004290FE /* SDWebImageManager.m in Sources */,
 				5C3C9ACB1CC63879004290FE /* SDWebImageDecoder.m in Sources */,
 				5C3C9AC91CC63879004290FE /* SDImageCache.m in Sources */,
-				5CE67EBA1D4F567800B5DCFC /* LXHelpClass.m in Sources */,
+				5CE67EBA1D4F567800B5DCFC /* LXTextHelpClass.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

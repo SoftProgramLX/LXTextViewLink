@@ -8,13 +8,13 @@
 
 #import <Foundation/Foundation.h>
 
-@interface LXHelpClass : NSObject
+@interface LXTextHelpClass : NSObject
 
 @property (nonatomic, strong) NSArray *faces;
 @property (nonatomic, strong) NSMutableArray *keyArr;
 @property (nonatomic, strong) NSMutableArray *valueArr;
 
-+ (LXHelpClass *)sharedLXHelpClass;
++ (LXTextHelpClass *)sharedLXTextHelpClass;
 + (NSArray *)validateEmojiOfText:(NSString *)string;
 + (NSArray *)validateLinkOfText:(NSString *)string;
 
